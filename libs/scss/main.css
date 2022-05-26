@@ -1,0 +1,377 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 14px; }
+
+.wrap-login {
+  background-image: url(../Img/BG.png);
+  background-repeat: no-repeat;
+  width: 100%; }
+  .wrap-login .container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 15px; }
+    .wrap-login .container .flex-login {
+      display: flex;
+      width: 100%;
+      min-height: 100vh; }
+      .wrap-login .container .flex-login .flex50-left {
+        display: flex;
+        flex-direction: column;
+        width: 50%; }
+        .wrap-login .container .flex-login .flex50-left .login__headleft {
+          padding: 57px 0 77px 70px; }
+          .wrap-login .container .flex-login .flex50-left .login__headleft .login-logo {
+            margin-bottom: 34px; }
+            .wrap-login .container .flex-login .flex50-left .login__headleft .login-logo .login__logo-link {
+              width: 100%;
+              max-width: 162px; }
+              .wrap-login .container .flex-login .flex50-left .login__headleft .login-logo .login__logo-link .login__logo-img {
+                width: 100%; }
+          .wrap-login .container .flex-login .flex50-left .login__headleft .login-txt {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            color: #A0A3AF;
+            width: 100%;
+            max-width: 534px;
+            padding-right: 24px;
+            margin: 0; }
+        .wrap-login .container .flex-login .flex50-left .login-chart {
+          max-width: 635px;
+          margin-left: 41px; }
+      .wrap-login .container .flex-login .flex50-right .login-right {
+        padding-top: 192px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .wrap-login .container .flex-login .flex50-right .login-right .box-login {
+          width: 100%;
+          max-width: 395px;
+          margin-right: 140px; }
+          .wrap-login .container .flex-login .flex50-right .login-right .box-login--lg {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 25px;
+            color: #FFFFFF;
+            margin: 0 0 55px 0; }
+          .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login {
+            margin-bottom: 169px; }
+            .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login {
+              margin-bottom: 16px;
+              width: 100%; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .txt-account {
+                margin: 0 0 8px 0;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: #797F8A; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login-act {
+                width: 100%;
+                max-width: 395px;
+                border-radius: 8px;
+                background-color: #313645;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #595E72;
+                padding: 16px;
+                border: 0;
+                cursor: pointer; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .txt-password {
+                margin: 0 0 8px 0;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: #797F8A; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login-psw {
+                width: 100%;
+                max-width: 395px;
+                border-radius: 8px;
+                background-color: #313645;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #595E72;
+                padding: 16px;
+                border: 0;
+                cursor: pointer; }
+            .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .btn-login {
+              margin-top: 9px;
+              width: 100%;
+              max-width: 395px;
+              padding: 12px 16px;
+              background-color: #E7AB21;
+              border-radius: 8px;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: #252424;
+              margin-bottom: 25px; }
+            .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .btn-login:active {
+              background-color: #dfe4ea; }
+            .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap {
+              margin-bottom: 20px; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap .txt-forgotpsw {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: #595E72;
+                text-decoration: none; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap .txt-forgotpsw:hover {
+                color: #786fa6; }
+            .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help {
+              display: flex; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-dhaveaaccount {
+                padding-right: 12px; }
+                .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-dhaveaaccount .txt-dhaveaaccount {
+                  font-weight: 700;
+                  line-height: 20px;
+                  color: #6F767E;
+                  text-decoration: none; }
+                .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-dhaveaaccount .txt-dhaveaaccount:hover {
+                  color: #574b90; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .txt-signup {
+                font-weight: 400;
+                line-height: 20px;
+                color: #E7AB21;
+                text-decoration: none; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .txt-signup:hover {
+                color: #ff793f; }
+        .wrap-login .container .flex-login .flex50-right .login-right .information {
+          margin-bottom: 55px;
+          padding-right: 135px; }
+          .wrap-login .container .flex-login .flex50-right .login-right .information-contact {
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 20px;
+            color: #595E72;
+            padding-right: 40px; }
+          .wrap-login .container .flex-login .flex50-right .login-right .information-contact:hover {
+            color: #574b90; }
+          .wrap-login .container .flex-login .flex50-right .login-right .information-risk {
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 20px;
+            color: #595E72;
+            padding-right: 42px; }
+          .wrap-login .container .flex-login .flex50-right .login-right .information-risk:hover {
+            color: #574b90; }
+          .wrap-login .container .flex-login .flex50-right .login-right .information-copyright {
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 20px;
+            color: #595E72; }
+          .wrap-login .container .flex-login .flex50-right .login-right .information-copyright:hover {
+            color: #574b90; }
+
+@media only screen and (max-width: 1400px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information {
+    margin-bottom: 12px;
+    padding-right: 0; }
+    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+      padding-left: 40px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login {
+    margin-right: 0; } }
+@media only screen and (max-width: 1199px) {
+  .wrap-login .container .flex-login .flex50-left .login__headleft .login-txt {
+    padding-right: 31px; }
+  .wrap-login .container .flex-login .flex50-left .login-chart {
+    max-width: 550px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login {
+    margin-right: 0; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login--lg {
+      margin: 0 0 40px 0; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login {
+      margin-bottom: 160px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .information {
+    margin-bottom: 37px;
+    padding-right: 6px; } }
+@media only screen and (max-width: 991px) {
+  .wrap-login .container .flex-login {
+    justify-content: center; }
+    .wrap-login .container .flex-login .flex50-left {
+      display: none; }
+    .wrap-login .container .flex-login .flex50-right .login-right {
+      padding-top: 190px; }
+      .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap {
+        margin-bottom: 0; } }
+@media only screen and (max-width: 642px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+    padding-left: 0; } }
+@media only screen and (max-width: 576px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information-contact {
+    padding-right: 25px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .information-risk {
+    padding-right: 27px; } }
+@media only screen and (max-width: 375px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login {
+    margin-bottom: 0; }
+
+  .information__wrap {
+    display: none; } }
+.header {
+  background-color: #131721; }
+  .header .header__container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 17px; }
+    .header .header__container .header-wrap {
+      display: flex;
+      justify-content: space-between; }
+      .header .header__container .header-wrap .header-left--content {
+        display: flex;
+        padding: 20px 0; }
+        .header .header__container .header-wrap .header-left--content---logo {
+          display: flex;
+          align-items: center; }
+          .header .header__container .header-wrap .header-left--content---logo .list-icon {
+            text-decoration: none;
+            padding-right: 12px; }
+        .header .header__container .header-wrap .header-left--content---nav .navigation {
+          display: flex;
+          margin: 0;
+          padding-left: 50px; }
+          .header .header__container .header-wrap .header-left--content---nav .navigation-item {
+            list-style: none; }
+            .header .header__container .header-wrap .header-left--content---nav .navigation-item .navigation-link {
+              text-decoration: none;
+              padding: 0 16px;
+              font-weight: 400;
+              line-height: 15px;
+              color: #797F8A; }
+      .header .header__container .header-wrap .header-right {
+        display: flex;
+        align-items: center;
+        cursor: pointer; }
+        .header .header__container .header-wrap .header-right .block-right {
+          display: flex;
+          align-items: center; }
+          .header .header__container .header-wrap .header-right .block-right .line-graph {
+            padding-right: 10px; }
+          .header .header__container .header-wrap .header-right .block-right .fast-transaction {
+            font-size: 16px;
+            margin: 0;
+            padding-right: 28px;
+            font-weight: 500;
+            line-height: 23.89px;
+            color: #E7AB21; }
+          .header .header__container .header-wrap .header-right .block-right .flag {
+            width: 26px;
+            height: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background-color: #CF422F;
+            margin-right: 10px; }
+          .header .header__container .header-wrap .header-right .block-right .vietnamese-language {
+            font-size: 12px;
+            padding-right: 4.63px;
+            margin: 0;
+            font-weight: 400;
+            line-height: 16px;
+            color: #797F8A; }
+          .header .header__container .header-wrap .header-right .block-right .drop-downsign {
+            padding-right: 17.63px;
+            border-right: 1px solid #333438;
+            padding-top: 14px;
+            padding-bottom: 14px; }
+        .header .header__container .header-wrap .header-right .block-left {
+          display: flex; }
+          .header .header__container .header-wrap .header-right .block-left .white-bell {
+            padding: 0 32.72px 0 35.75px; }
+          .header .header__container .header-wrap .header-right .block-left .girl-photo {
+            padding-right: 10.61px; }
+          .header .header__container .header-wrap .header-right .block-left .text {
+            padding-right: 14.13px;
+            font-weight: 400;
+            line-height: 16.7px;
+            color: #FFFFFF; }
+
+.main {
+  background-color: #1D2029; }
+  .main .main__container .list-chart {
+    padding: 16px 0;
+    display: flex; }
+    .main .main__container .list-chart--wrap {
+      padding: 2px 15px 0 0;
+      display: flex;
+      border-right: 1px solid #292D38; }
+      .main .main__container .list-chart--wrap .text-andnumbers {
+        padding-left: 16px; }
+        .main .main__container .list-chart--wrap .text-andnumbers .information-above .vn-index {
+          padding: 5px 9.5px 4px 0;
+          font-weight: 700;
+          line-height: 20px;
+          color: #E2E2E2; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .vn-index .continuous-session {
+            padding-left: 8px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 11px;
+            color: #595E72; }
+        .main .main__container .list-chart--wrap .text-andnumbers .information-above .first-value-block {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 18px;
+          color: #4FD08A; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .first-value-block .percentage-growth {
+            font-weight: 400;
+            font-size: 10px;
+            padding-left: 4.33px; }
+        .main .main__container .list-chart--wrap .text-andnumbers .information-above .second-value-block {
+          padding: 5px 0 12px 1px; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .second-value-block .fa-solid.fa-arrow-up-long {
+            color: #4FD08A;
+            padding-right: 2px; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .second-value-block .number-287 {
+            color: #4FD08A;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .second-value-block .number-12 {
+            color: #BB33DD;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .second-value-block .number-49 {
+            color: #CCAC3D;
+            padding: 0 8px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .second-value-block .fa-solid.fa-arrow-down-long {
+            color: #CF422F; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .second-value-block .number-82 {
+            color: #CF422F;
+            padding-right: 2px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px; }
+          .main .main__container .list-chart--wrap .text-andnumbers .information-above .second-value-block .number-4 {
+            color: #00CCCC;
+            padding-right: 14px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px; }
+        .main .main__container .list-chart--wrap .text-andnumbers .information-below {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: #A0A3AF; }
+
+/*# sourceMappingURL=main.css.map */

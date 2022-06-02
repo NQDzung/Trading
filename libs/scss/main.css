@@ -5,13 +5,17 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
+* {
+  font-family: "Roboto"; }
+
 body {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto';
   font-size: 14px; }
+  body a {
+    text-decoration: none; }
 
 .wrap-login {
   background-image: url(../Img/BG.png);
@@ -51,24 +55,25 @@ body {
         .wrap-login .container .flex-login .flex50-left .login-chart {
           max-width: 635px;
           margin-left: 41px; }
-      .wrap-login .container .flex-login .flex50-right .login-right {
-        padding-top: 192px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; }
-        .wrap-login .container .flex-login .flex50-right .login-right .box-login {
-          width: 100%;
-          max-width: 395px;
-          margin-right: 140px; }
-          .wrap-login .container .flex-login .flex50-right .login-right .box-login--lg {
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 25px;
-            color: #FFFFFF;
-            margin: 0 0 55px 0; }
-          .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login {
-            margin-bottom: 169px; }
+      .wrap-login .container .flex-login .flex50-right {
+        width: 50%; }
+        .wrap-login .container .flex-login .flex50-right .login-right {
+          height: 100vh;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .wrap-login .container .flex-login .flex50-right .login-right .box-login {
+            width: 100%;
+            max-width: 395px;
+            margin: 0 170px 34px 0; }
+            .wrap-login .container .flex-login .flex50-right .login-right .box-login--lg {
+              font-weight: 400;
+              font-size: 32px;
+              line-height: 25px;
+              color: #FFFFFF;
+              margin: 0 0 55px 0; }
             .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login {
               margin-bottom: 16px;
               width: 100%; }
@@ -150,33 +155,38 @@ body {
                 text-decoration: none; }
               .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .txt-signup:hover {
                 color: #ff793f; }
-        .wrap-login .container .flex-login .flex50-right .login-right .information {
-          margin-bottom: 55px;
-          padding-right: 135px; }
-          .wrap-login .container .flex-login .flex50-right .login-right .information-contact {
-            text-decoration: none;
-            font-weight: 700;
-            line-height: 20px;
-            color: #595E72;
-            padding-right: 40px; }
-          .wrap-login .container .flex-login .flex50-right .login-right .information-contact:hover {
-            color: #574b90; }
-          .wrap-login .container .flex-login .flex50-right .login-right .information-risk {
-            text-decoration: none;
-            font-weight: 700;
-            line-height: 20px;
-            color: #595E72;
-            padding-right: 42px; }
-          .wrap-login .container .flex-login .flex50-right .login-right .information-risk:hover {
-            color: #574b90; }
-          .wrap-login .container .flex-login .flex50-right .login-right .information-copyright {
-            text-decoration: none;
-            font-weight: 700;
-            line-height: 20px;
-            color: #595E72; }
-          .wrap-login .container .flex-login .flex50-right .login-right .information-copyright:hover {
-            color: #574b90; }
+          .wrap-login .container .flex-login .flex50-right .login-right .information {
+            margin-bottom: 55px;
+            padding-right: 154px;
+            position: absolute;
+            top: 93%; }
+            .wrap-login .container .flex-login .flex50-right .login-right .information-contact {
+              text-decoration: none;
+              font-weight: 700;
+              line-height: 20px;
+              color: #595E72;
+              padding-right: 40px; }
+            .wrap-login .container .flex-login .flex50-right .login-right .information-contact:hover {
+              color: #574b90; }
+            .wrap-login .container .flex-login .flex50-right .login-right .information-risk {
+              text-decoration: none;
+              font-weight: 700;
+              line-height: 20px;
+              color: #595E72;
+              padding-right: 42px; }
+            .wrap-login .container .flex-login .flex50-right .login-right .information-risk:hover {
+              color: #574b90; }
+            .wrap-login .container .flex-login .flex50-right .login-right .information-copyright {
+              text-decoration: none;
+              font-weight: 700;
+              line-height: 20px;
+              color: #595E72; }
+            .wrap-login .container .flex-login .flex50-right .login-right .information-copyright:hover {
+              color: #574b90; }
 
+@media only screen and (max-width: 1470px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information {
+    padding-right: 0; } }
 @media only screen and (max-width: 1400px) {
   .wrap-login .container .flex-login .flex50-right .login-right .information {
     margin-bottom: 12px;
@@ -185,6 +195,13 @@ body {
       padding-left: 40px; }
   .wrap-login .container .flex-login .flex50-right .login-right .box-login {
     margin-right: 0; } }
+@media only screen and (max-width: 1242px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+    padding-left: 5px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap .information-contact {
+      padding-right: 10px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .information-risk {
+    padding-right: 12px; } }
 @media only screen and (max-width: 1199px) {
   .wrap-login .container .flex-login .flex50-left .login__headleft .login-txt {
     padding-right: 31px; }
@@ -199,6 +216,14 @@ body {
   .wrap-login .container .flex-login .flex50-right .login-right .information {
     margin-bottom: 37px;
     padding-right: 6px; } }
+@media only screen and (max-width: 1199px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+    font-size: 13px; } }
+@media only screen and (max-width: 991px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+    font-size: 11px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap .information-contact {
+      padding-right: 20px; } }
 @media only screen and (max-width: 991px) {
   .wrap-login .container .flex-login {
     justify-content: center; }
@@ -208,6 +233,13 @@ body {
       padding-top: 190px; }
       .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap {
         margin-bottom: 0; } }
+@media only screen and (max-width: 877px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+    font-size: 13px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap .information-contact {
+      padding-right: 50px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap .information-risk {
+      padding-right: 184px; } }
 @media only screen and (max-width: 642px) {
   .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
     padding-left: 0; } }
@@ -302,19 +334,19 @@ body {
             line-height: 16.7px;
             color: #FFFFFF; }
 
-.main {
+.main .main__container {
   background-color: #1D2029; }
   .main .main__container .list-chart {
     padding: 16px 0;
     display: flex; }
     .main .main__container .list-chart--wrap {
-      padding: 2px 15px 0 0;
+      padding: 2px 13px 0 0;
       display: flex;
       border-right: 1px solid #292D38; }
       .main .main__container .list-chart--wrap .text-andnumbers {
         padding-left: 16px; }
         .main .main__container .list-chart--wrap .text-andnumbers .information-above .vn-index {
-          padding: 5px 9.5px 4px 0;
+          padding: 5px 1.5px 4px 0;
           font-weight: 700;
           line-height: 20px;
           color: #E2E2E2; }
@@ -373,5 +405,180 @@ body {
           font-size: 12px;
           line-height: 18px;
           color: #A0A3AF; }
+.main .price__menu {
+  padding: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292D38; }
+  .main .price__menu .darkgray-col {
+    background-color: #21242F; }
+  .main .price__menu-left {
+    display: flex; }
+    .main .price__menu-left .boxsearch {
+      border-right: 1px solid #313645; }
+      .main .price__menu-left .boxsearch img {
+        padding: 0 10px; }
+      .main .price__menu-left .boxsearch input {
+        padding: 0 16px 0 0;
+        max-width: 134px;
+        border: 0;
+        background-color: #292D38;
+        color: #FFFFFF;
+        line-height: 18px;
+        font-weight: 400;
+        font-size: 12px;
+        outline: none; }
+    .main .price__menu-left .menu-bar {
+      display: flex;
+      align-items: center; }
+      .main .price__menu-left .menu-bar .nav-tabs {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        border-bottom: none; }
+        .main .price__menu-left .menu-bar .nav-tabs .nav-item {
+          display: flex;
+          padding: 0 16px; }
+          .main .price__menu-left .menu-bar .nav-tabs .nav-item .gray-star {
+            padding-right: 10px; }
+          .main .price__menu-left .menu-bar .nav-tabs .nav-item a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 15px;
+            padding: 4px 8px;
+            color: #797F8A;
+            background: none;
+            border: none;
+            margin-bottom: 0; }
+          .main .price__menu-left .menu-bar .nav-tabs .nav-item a:hover {
+            color: #E7AB21;
+            background-color: rgba(185, 170, 135, 0.1); }
+          .main .price__menu-left .menu-bar .nav-tabs .nav-item .down-arrow {
+            padding-left: 8px; }
+  .main .price__menu-right {
+    display: flex;
+    align-items: center; }
+    .main .price__menu-right .nav-tabs {
+      border: none; }
+      .main .price__menu-right .nav-tabs .nav-item a {
+        background: none;
+        border: none;
+        margin-bottom: 0; }
+        .main .price__menu-right .nav-tabs .nav-item a .three-squares {
+          padding-right: 23.5px; }
+        .main .price__menu-right .nav-tabs .nav-item a .four-squares {
+          padding-right: 24px; }
+        .main .price__menu-right .nav-tabs .nav-item a .two-squares {
+          padding: 2px 20px 2px 0;
+          border-right: 1px solid #313645; }
+        .main .price__menu-right .nav-tabs .nav-item a .setting {
+          padding-left: 20px; }
+        .main .price__menu-right .nav-tabs .nav-item a .zoom {
+          padding: 0 10px 0 25px; }
+.main .price-board {
+  border: 1px solid #292D38;
+  border-collapse: collapse;
+  background-color: #131721; }
+  .main .price-board tr {
+    border: 1px solid #292D38; }
+    .main .price-board tr th {
+      border: 1px solid #292D38; }
+    .main .price-board tr .first-title {
+      padding: 21px 32px;
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: #FFFFFF; }
+    .main .price-board tr .white-title {
+      padding: 21px 30.3px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: #FFFFFF;
+      background-color: #21242F;
+      border: 1px solid #292D38; }
+    .main .price-board tr .purchase {
+      padding: 7px 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #797F8A; }
+    .main .price-board tr .order-matching {
+      background-color: #21242F;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #797F8A; }
+    .main .price-board tr .total-wrap {
+      padding: 0 19.5px; }
+      .main .price-board tr .total-wrap .total {
+        padding: 0 14px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF; }
+    .main .price-board tr .price {
+      background-color: #21242F;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #797F8A; }
+    .main .price-board tr .block-ndt {
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #797F8A; }
+    .main .price-board tr .list-item {
+      padding: 7px 18px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FFFFFF; }
+    .main .price-board tr .list-item--clr {
+      padding: 7px 19px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FFFFFF; }
+    .main .price-board tr .list-item--clr {
+      background-color: #21242F; }
+      .main .price-board tr .list-item--clr span {
+        padding: 0 14px; }
+    .main .price-board tr .list-item--gray {
+      background-color: #21242F;
+      padding: 7px 34px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FFFFFF; }
+    .main .price-board tr .list-item--right {
+      padding: 7px 46.5px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FFFFFF; }
+.main .price-board tr td {
+  text-align: center; }
+.main .price-board tr .green-clr {
+  color: #0FB159; }
+.main .price-board tr .purple-clr {
+  color: #BB33DD; }
+.main .price-board tr .blue-clr {
+  color: #00CCCC; }
+.main .price-board tr .yellow-clr {
+  color: #CCAC3D; }
+.main .price-board tr .white-clr {
+  color: #FFFFFF; }
+.main .price-board tr .red-clr {
+  color: #DD2E16; }
+.main .price-board tr .bg-change {
+  background-color: #21242F; }
 
 /*# sourceMappingURL=main.css.map */

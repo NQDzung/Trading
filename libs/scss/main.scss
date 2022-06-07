@@ -13,6 +13,7 @@ $color-green: #0FB159;
 $color-darkgreen: #4FD08A;
 $font-size-12px: 12px;
 $bg-color: #131721;
+$bg-color-darkgray: #1D2029;
 
 // -Mixin-
 @mixin attributes ($weight, $lineheight, $color) {
@@ -200,7 +201,6 @@ body {
                                 .txt-account {
                                     margin: 0 0 8px 0;
                                     font-weight: 700;
-                                    font-size: 14px;
                                     line-height: 20px;
                                     color: #797F8A;
                                 }
@@ -222,7 +222,6 @@ body {
                                 .txt-password {
                                     margin: 0 0 8px 0;
                                     font-weight: 700;
-                                    font-size: 14px;
                                     line-height: 20px;
                                     color: #797F8A;
                                 }
@@ -281,6 +280,7 @@ body {
 
                                 .p-dhaveaaccount {
                                     padding-right: 12px;
+                                    margin: 0;
 
                                     .txt-dhaveaaccount {
                                         font-weight: 700;
@@ -294,16 +294,21 @@ body {
                                     }
                                 }
 
-                                .txt-signup {
-                                    font-weight: 400;
-                                    line-height: 20px;
-                                    color: #E7AB21;
-                                    text-decoration: none;
+                                .p-signup {
+                                    margin: 0;
+
+                                    .txt-signup {
+                                        font-weight: 400;
+                                        line-height: 20px;
+                                        color: #E7AB21;
+                                        text-decoration: none;
+                                    }
+
+                                    .txt-signup:hover {
+                                        color: #ff793f;
+                                    }
                                 }
 
-                                .txt-signup:hover {
-                                    color: #ff793f;
-                                }
                             }
                         }
                     }
@@ -355,6 +360,7 @@ body {
     }
 }
 
+// -RESPONSIVE-
 @media only screen and (max-width: 1470px) {
 
     .wrap-login {
@@ -398,132 +404,21 @@ body {
     }
 }
 
-@media only screen and (max-width:1242px) {
+@media only screen and (max-width: 1367px) {
 
     .wrap-login {
         .container {
             .flex-login {
-                .flex50-right {
-                    .login-right {
-                        .information__wrap {
-                            padding-left: 5px;
-
-                            .information-contact {
-                                padding-right: 10px;
-                            }
-                        }
-
-                        .information-risk {
-                            padding-right: 12px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width:1199px) {
-
-    .wrap-login {
-        .container {
-            .flex-login {
-                .flex50-left {
-                    .login__headleft {
-                        .login-txt {
-                            padding-right: 31px;
-                        }
-                    }
-
-                    .login-chart {
-                        max-width: 550px;
-                    }
-                }
-
-                .flex50-right {
-                    .login-right {
-                        .box-login {
-                            margin-right: 0;
-
-                            &--lg {
-                                margin: 0 0 40px 0;
-                            }
-
-                            .block-login {
-                                margin-bottom: 160px;
-                            }
-                        }
-
-                        .information {
-                            margin-bottom: 37px;
-                            padding-right: 6px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width:1199px) {
-
-    .wrap-login {
-        .container {
-            .flex-login {
-                .flex50-right {
-                    .login-right {
-                        .information__wrap {
-                            font-size: 13px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 991px) {
-
-    .wrap-login {
-        .container {
-            .flex-login {
-                .flex50-right {
-                    .login-right {
-                        .information__wrap {
-                            font-size: 11px;
-
-                            .information-contact {
-                                padding-right: 20px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 991px) {
-
-    .wrap-login {
-        .container {
-            .flex-login {
-                justify-content: center;
-
                 .flex50-left {
                     display: none;
                 }
 
                 .flex50-right {
-                    .login-right {
-                        padding-top: 190px;
+                    width: 100%;
 
-                        .box-login {
-                            .block-login {
-                                .forgotpsw-wrap {
-                                    margin-bottom: 0;
-                                }
-                            }
+                    .login-right {
+                        .information {
+                            margin-bottom: 0;
                         }
                     }
                 }
@@ -532,7 +427,75 @@ body {
     }
 }
 
-@media only screen and (max-width: 877px) {
+@media only screen and (max-width: 768px) {
+
+    .wrap-login {
+        .container {
+            .flex-login {
+                .flex50-right {
+                    .login-right {
+                        .box-login {
+                            .box-login--lg {
+                                margin-bottom: 50px;
+                            }
+
+                            .block-login {
+                                .field_login {
+                                    .txt-account {
+                                        font-size: 13px;
+                                    }
+
+                                    .field_login-act {
+                                        font-size: 15px;
+                                    }
+
+                                    .txt-password {
+                                        font-size: 13px;
+                                    }
+
+                                    .field_login-psw {
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                .btn-login {
+                                    font-size: 15px;
+                                }
+
+                                .forgotpsw-wrap {
+                                    .txt-forgotpsw {
+                                        font-size: 13px;
+                                    }
+                                }
+
+                                .field__login-help {
+                                    .p-dhaveaaccount {
+                                        .txt-dhaveaaccount {
+                                            font-size: 13px;
+                                        }
+                                    }
+
+                                    .p-signup {
+                                        .txt-signup {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .information__wrap {
+                            font-size: 13px;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 562px) {
 
     .wrap-login {
         .container {
@@ -540,58 +503,53 @@ body {
                 .flex50-right {
                     .login-right {
                         .information__wrap {
-                            font-size: 13px;
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 555px) {
+
+    .wrap-login {
+        .container {
+            .flex-login {
+                .flex50-right {
+                    .login-right {
+                        position: relative;
+
+                        .box-login {
+                            max-width: 340px;
+
+                            .box-login--lg {
+                                margin-bottom: 40px;
+                            }
+
+                            .block-login {
+                                .btn-login {
+                                    margin-bottom: 20px;
+                                }
+
+                                .forgotpsw-wrap {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+
+                        .information {
+                            position: absolute;
+                            top: 91%;
 
                             .information-contact {
-                                padding-right: 50px;
-                            }
-
-                            .information-risk {
-                                padding-right: 184px;
+                                padding: 0 28px 0 50px;
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
-}
 
-@media only screen and (max-width:642px) {
-
-    .wrap-login {
-        .container {
-            .flex-login {
-                .flex50-right {
-                    .login-right {
-                        .information {
-                            &__wrap {
-                                padding-left: 0;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width:576px) {
-
-    .wrap-login {
-        .container {
-            .flex-login {
-                .flex50-right {
-                    .login-right {
-                        .information {
-                            &-contact {
-                                padding-right: 25px;
-                            }
-
-                            &-risk {
-                                padding-right: 27px;
-                            }
-                        }
                     }
                 }
             }
@@ -607,18 +565,65 @@ body {
                 .flex50-right {
                     .login-right {
                         .box-login {
-                            .block-login {
-                                margin-bottom: 0;
+                            max-width: 250px;
+
+                            .box-login--lg {
+                                font-size: 31px;
+                                margin-bottom: 35px;
                             }
+
+                            .block-login {
+                                .field_login {
+                                    .txt-account {
+                                        font-size: 12px;
+                                    }
+
+                                    .field_login-act {
+                                        font-size: 14px;
+                                    }
+
+                                    .txt-password {
+                                        font-size: 12px;
+                                    }
+
+                                    .field_login-psw {
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .btn-login {
+                                    font-size: 14px;
+                                }
+
+                                .forgotpsw-wrap {
+                                    .txt-forgotpsw {
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                .field__login-help {
+                                    .p-dhaveaaccount {
+                                        .txt-dhaveaaccount {
+                                            font-size: 12px;
+                                        }
+                                    }
+
+                                    .p-signup {
+                                        .txt-signup {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .information__wrap {
+                            font-size: 12px;
                         }
                     }
                 }
             }
         }
-    }
-
-    .information__wrap {
-        display: none;
     }
 }
 
@@ -722,6 +727,7 @@ body {
 
                 .block-left {
                     display: flex;
+                    align-items: center;
 
                     .white-bell {
                         padding: 0 32.72px 0 35.75px;
@@ -732,6 +738,7 @@ body {
                     }
 
                     .text {
+                        margin: 0;
                         padding-right: 14.13px;
                         @include attributes(400, 16.7px, #FFFFFF)
                     }
@@ -750,7 +757,7 @@ body {
             display: flex;
 
             &--wrap {
-                padding: 2px 13px 0 0;
+                padding: 2px 9px 0 0;
                 display: flex;
                 border-right: 1px solid #292D38;
                 // align-items: center;
@@ -948,6 +955,7 @@ body {
                         background: none;
                         border: none;
                         margin-bottom: 0;
+                        padding: 12px 0;
 
                         .three-squares {
                             padding-right: 23.5px;
@@ -988,18 +996,17 @@ body {
 
             th {
                 @include border();
-                // padding: 0;
-                // border: 0;
+                padding: 0;
             }
 
             .first-title {
-                padding: 21px 32px;
+                padding: 21px 32.9px;
                 color: $color-white;
                 @include white-title;
             }
 
             .white-title {
-                padding: 21px 30.3px;
+                padding: 21px 28px;
                 @include white-title;
                 background-color: $color-darkgray;
                 @include add-border();
@@ -1018,10 +1025,12 @@ body {
             }
 
             .total-wrap {
-                padding: 0 19.5px;
+                a {
+                    padding: 0 14px;
+                }
 
                 .total {
-                    padding: 0 14px;
+                    padding: 21px 0;
                     @include full-attributes(500, 12px, 14px, #FFFFFF)
                 }
             }
@@ -1062,7 +1071,7 @@ body {
             }
 
             .list-item--right {
-                padding: 7px 46.5px;
+                padding: 7px 47px;
                 @include full-attributes(500, 12px, 14px, #FFFFFF)
             }
         }
@@ -1071,6 +1080,14 @@ body {
     .price-board {
         tr {
             td {
+                font: {
+                    size: 12px;
+                    weight: 500;
+                }
+
+                line-height: 16px;
+                padding: 4px 0;
+                @include border();
                 @include text-align();
             }
 
@@ -1097,11 +1114,43 @@ body {
             .red-clr {
                 color: $color-red;
             }
-            
+
             .bg-change {
                 background-color: #21242F;
             }
 
+        }
+    }
+
+    .foursquares__wrap {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        padding: 16px 16px 0;
+        color: white;
+        background-color: $bg-color;
+
+        .foursquares-board {
+            // margin: 18px 8px;
+            // margin-bottom: 16px;
+            margin: 18px 8px 16px;
+            background-color: $bg-color-darkgray;
+            border-radius: 8px;
+            .foursquares-top {
+                display: flex;
+                padding-bottom: 20px;
+
+                &--if {
+                    display: flex;
+                }
+            }
+
+            .foursquares-bottom {
+                &--wrap {
+                    display: grid;
+                    column-gap: 14px;
+                    grid-template-columns: auto auto auto auto;
+                }
+            }
         }
     }
 }

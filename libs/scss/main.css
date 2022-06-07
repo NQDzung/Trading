@@ -80,7 +80,6 @@ body {
               .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .txt-account {
                 margin: 0 0 8px 0;
                 font-weight: 700;
-                font-size: 14px;
                 line-height: 20px;
                 color: #797F8A; }
               .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login-act {
@@ -98,7 +97,6 @@ body {
               .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .txt-password {
                 margin: 0 0 8px 0;
                 font-weight: 700;
-                font-size: 14px;
                 line-height: 20px;
                 color: #797F8A; }
               .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login-psw {
@@ -140,7 +138,8 @@ body {
             .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help {
               display: flex; }
               .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-dhaveaaccount {
-                padding-right: 12px; }
+                padding-right: 12px;
+                margin: 0; }
                 .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-dhaveaaccount .txt-dhaveaaccount {
                   font-weight: 700;
                   line-height: 20px;
@@ -148,13 +147,15 @@ body {
                   text-decoration: none; }
                 .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-dhaveaaccount .txt-dhaveaaccount:hover {
                   color: #574b90; }
-              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .txt-signup {
-                font-weight: 400;
-                line-height: 20px;
-                color: #E7AB21;
-                text-decoration: none; }
-              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .txt-signup:hover {
-                color: #ff793f; }
+              .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-signup {
+                margin: 0; }
+                .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-signup .txt-signup {
+                  font-weight: 400;
+                  line-height: 20px;
+                  color: #E7AB21;
+                  text-decoration: none; }
+                .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-signup .txt-signup:hover {
+                  color: #ff793f; }
           .wrap-login .container .flex-login .flex50-right .login-right .information {
             margin-bottom: 55px;
             padding-right: 154px;
@@ -195,65 +196,80 @@ body {
       padding-left: 40px; }
   .wrap-login .container .flex-login .flex50-right .login-right .box-login {
     margin-right: 0; } }
-@media only screen and (max-width: 1242px) {
-  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
-    padding-left: 5px; }
-    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap .information-contact {
-      padding-right: 10px; }
-  .wrap-login .container .flex-login .flex50-right .login-right .information-risk {
-    padding-right: 12px; } }
-@media only screen and (max-width: 1199px) {
-  .wrap-login .container .flex-login .flex50-left .login__headleft .login-txt {
-    padding-right: 31px; }
-  .wrap-login .container .flex-login .flex50-left .login-chart {
-    max-width: 550px; }
-  .wrap-login .container .flex-login .flex50-right .login-right .box-login {
-    margin-right: 0; }
-    .wrap-login .container .flex-login .flex50-right .login-right .box-login--lg {
-      margin: 0 0 40px 0; }
-    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login {
-      margin-bottom: 160px; }
-  .wrap-login .container .flex-login .flex50-right .login-right .information {
-    margin-bottom: 37px;
-    padding-right: 6px; } }
-@media only screen and (max-width: 1199px) {
-  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
-    font-size: 13px; } }
-@media only screen and (max-width: 991px) {
-  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
-    font-size: 11px; }
-    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap .information-contact {
-      padding-right: 20px; } }
-@media only screen and (max-width: 991px) {
-  .wrap-login .container .flex-login {
-    justify-content: center; }
-    .wrap-login .container .flex-login .flex50-left {
-      display: none; }
-    .wrap-login .container .flex-login .flex50-right .login-right {
-      padding-top: 190px; }
-      .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap {
-        margin-bottom: 0; } }
-@media only screen and (max-width: 877px) {
-  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+@media only screen and (max-width: 1367px) {
+  .wrap-login .container .flex-login .flex50-left {
+    display: none; }
+  .wrap-login .container .flex-login .flex50-right {
+    width: 100%; }
+    .wrap-login .container .flex-login .flex50-right .login-right .information {
+      margin-bottom: 0; } }
+@media only screen and (max-width: 768px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .box-login--lg {
+    margin-bottom: 50px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .txt-account {
     font-size: 13px; }
-    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap .information-contact {
-      padding-right: 50px; }
-    .wrap-login .container .flex-login .flex50-right .login-right .information__wrap .information-risk {
-      padding-right: 184px; } }
-@media only screen and (max-width: 642px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .field_login-act {
+    font-size: 15px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .txt-password {
+    font-size: 13px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .field_login-psw {
+    font-size: 15px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .btn-login {
+    font-size: 15px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap .txt-forgotpsw {
+    font-size: 13px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-dhaveaaccount .txt-dhaveaaccount {
+    font-size: 13px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-signup .txt-signup {
+    font-size: 13px; }
   .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+    font-size: 13px;
     padding-left: 0; } }
-@media only screen and (max-width: 576px) {
-  .wrap-login .container .flex-login .flex50-right .login-right .information-contact {
-    padding-right: 25px; }
-  .wrap-login .container .flex-login .flex50-right .login-right .information-risk {
-    padding-right: 27px; } }
+@media only screen and (max-width: 562px) {
+  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; } }
+@media only screen and (max-width: 555px) {
+  .wrap-login .container .flex-login .flex50-right .login-right {
+    position: relative; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login {
+      max-width: 340px; }
+      .wrap-login .container .flex-login .flex50-right .login-right .box-login .box-login--lg {
+        margin-bottom: 40px; }
+      .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .btn-login {
+        margin-bottom: 20px; }
+      .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap {
+        margin-bottom: 15px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .information {
+      position: absolute;
+      top: 91%; }
+      .wrap-login .container .flex-login .flex50-right .login-right .information .information-contact {
+        padding: 0 28px 0 50px; } }
 @media only screen and (max-width: 375px) {
-  .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login {
-    margin-bottom: 0; }
-
-  .information__wrap {
-    display: none; } }
+  .wrap-login .container .flex-login .flex50-right .login-right .box-login {
+    max-width: 250px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .box-login--lg {
+      font-size: 31px;
+      margin-bottom: 35px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .txt-account {
+      font-size: 12px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .field_login-act {
+      font-size: 14px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .txt-password {
+      font-size: 12px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field_login .field_login-psw {
+      font-size: 14px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .btn-login {
+      font-size: 14px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .forgotpsw-wrap .txt-forgotpsw {
+      font-size: 12px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-dhaveaaccount .txt-dhaveaaccount {
+      font-size: 12px; }
+    .wrap-login .container .flex-login .flex50-right .login-right .box-login .block-login .field__login-help .p-signup .txt-signup {
+      font-size: 12px; }
+  .wrap-login .container .flex-login .flex50-right .login-right .information__wrap {
+    font-size: 12px; } }
 .header {
   background-color: #131721; }
   .header .header__container {
@@ -323,12 +339,14 @@ body {
             padding-top: 14px;
             padding-bottom: 14px; }
         .header .header__container .header-wrap .header-right .block-left {
-          display: flex; }
+          display: flex;
+          align-items: center; }
           .header .header__container .header-wrap .header-right .block-left .white-bell {
             padding: 0 32.72px 0 35.75px; }
           .header .header__container .header-wrap .header-right .block-left .girl-photo {
             padding-right: 10.61px; }
           .header .header__container .header-wrap .header-right .block-left .text {
+            margin: 0;
             padding-right: 14.13px;
             font-weight: 400;
             line-height: 16.7px;
@@ -340,7 +358,7 @@ body {
     padding: 16px 0;
     display: flex; }
     .main .main__container .list-chart--wrap {
-      padding: 2px 13px 0 0;
+      padding: 2px 9px 0 0;
       display: flex;
       border-right: 1px solid #292D38; }
       .main .main__container .list-chart--wrap .text-andnumbers {
@@ -465,7 +483,8 @@ body {
       .main .price__menu-right .nav-tabs .nav-item a {
         background: none;
         border: none;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        padding: 12px 0; }
         .main .price__menu-right .nav-tabs .nav-item a .three-squares {
           padding-right: 23.5px; }
         .main .price__menu-right .nav-tabs .nav-item a .four-squares {
@@ -484,16 +503,17 @@ body {
   .main .price-board tr {
     border: 1px solid #292D38; }
     .main .price-board tr th {
-      border: 1px solid #292D38; }
+      border: 1px solid #292D38;
+      padding: 0; }
     .main .price-board tr .first-title {
-      padding: 21px 32px;
+      padding: 21px 32.9px;
       color: #FFFFFF;
       font-weight: 500;
       font-size: 12px;
       line-height: 16px;
       color: #FFFFFF; }
     .main .price-board tr .white-title {
-      padding: 21px 30.3px;
+      padding: 21px 28px;
       font-weight: 500;
       font-size: 12px;
       line-height: 16px;
@@ -514,14 +534,14 @@ body {
       font-size: 12px;
       line-height: 14px;
       color: #797F8A; }
-    .main .price-board tr .total-wrap {
-      padding: 0 19.5px; }
-      .main .price-board tr .total-wrap .total {
-        padding: 0 14px;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 14px;
-        color: #FFFFFF; }
+    .main .price-board tr .total-wrap a {
+      padding: 0 14px; }
+    .main .price-board tr .total-wrap .total {
+      padding: 21px 0;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FFFFFF; }
     .main .price-board tr .price {
       background-color: #21242F;
       text-align: center;
@@ -559,12 +579,17 @@ body {
       line-height: 14px;
       color: #FFFFFF; }
     .main .price-board tr .list-item--right {
-      padding: 7px 46.5px;
+      padding: 7px 47px;
       font-weight: 500;
       font-size: 12px;
       line-height: 14px;
       color: #FFFFFF; }
 .main .price-board tr td {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 4px 0;
+  border: 1px solid #292D38;
   text-align: center; }
 .main .price-board tr .green-clr {
   color: #0FB159; }
@@ -580,5 +605,24 @@ body {
   color: #DD2E16; }
 .main .price-board tr .bg-change {
   background-color: #21242F; }
+.main .foursquares__wrap {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 16px 16px 0;
+  color: white;
+  background-color: #131721; }
+  .main .foursquares__wrap .foursquares-board {
+    margin: 18px 8px 16px;
+    background-color: #1D2029;
+    border-radius: 8px; }
+    .main .foursquares__wrap .foursquares-board .foursquares-top {
+      display: flex;
+      padding-bottom: 20px; }
+      .main .foursquares__wrap .foursquares-board .foursquares-top--if {
+        display: flex; }
+    .main .foursquares__wrap .foursquares-board .foursquares-bottom--wrap {
+      display: grid;
+      column-gap: 14px;
+      grid-template-columns: auto auto auto auto; }
 
 /*# sourceMappingURL=main.css.map */
